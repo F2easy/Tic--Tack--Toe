@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+
+
+}
+
+body{
+    display: flex;
+    font-family:Arial, Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    color: rgb(21, 20, 20) ;
+    font-size: 6vmin;
+    letter-spacing: 2vmin;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color:black
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 10vmin);
+    grid-template-rows: repeat(3, 10vmin);
+    gap: 1vmin;
+    margin-top: 7vmin;
+    background-color: black;
+}
+
+
+button{
+    margin-top: 10vmin;
+    margin-bottom: 15vmin;
+    transition: all 0.3s ease-in-out;
+    font-size: 4vmin;
+}
+
+.button-grow {
+    color: black;
+    background-color: transparent;
+    border: 1px solid;
+    transition: all.03s ease-in-out;
+}
+
+.button-grow:hover {
+    transform: scale(3.1);
+    transition:200ms ease-in-out;
+    
+
+}
